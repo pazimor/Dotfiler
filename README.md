@@ -1,0 +1,2 @@
+# Dotfile
+little ricing config
