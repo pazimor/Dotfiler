@@ -1,10 +1,21 @@
-killall polybar
+#!/usr/bin/env sh
 
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+# Terminate already running bar instances
+killall -q polybar
 
-counter=0
-i3-msg -t get_workspaces | tr ',' '\n' | sed -nr 's/"name":"([^"]+)"/\1/p' | while read -r name; do
-  printf 'ws-icon-%i = "%s;<insert-icon-here>"\n' $((counter++)) $name
-done
+# Wait until the processes have been shut down
+#while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar --reload example &
+  done
+else
+  polybar --reload example &
+fi
+
+# Launch bar1 and bar2
 polybar example &
+
+
+echo "Bars launched..."
