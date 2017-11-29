@@ -124,22 +124,17 @@ label-urgent = %index%: %name%
 ;label-urgent-background = #bd2c40
 label-urgent-padding = 2
 
-[module/wlan]
+[module/wireless-network]
 type = internal/network
 interface = wlo1
-interval = 3.0
 
-format-connected = <label-connected>
-format-connected-underline = #0a6cf5
-label-connected =   %downspeed% | %upspeed%
-
-format-disconnected = <label-disconnected>
-label-disconnected =  disconnected
-format-disconnected-underline = #f56c0a
+[module/wired-network]
+type = internal/network
+interface = eno1
 
 [module/network]
 type = internal/network
-interface = wlo1
+interface = eno1
 interval = 3.0
 accumulate-stats = true
 
