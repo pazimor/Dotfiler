@@ -89,16 +89,16 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $w1 1
-set $w2 2
-set $w3 3
-set $w4 4
-set $w5 5
-set $w6 6
-set $w7 7
-set $w8 8
-set $w9 9
-set $w10 10
+set $w1 1:  
+set $w2 2:  
+set $w3 3:  
+set $w4 4:  
+set $w5 5:  
+set $w6 6:  
+set $w7 7:  
+set $w8 8:  
+set $w9 9:  
+set $w10 10:  
 
 # switch to workspace
 bindsym $mod+1 workspace $w1
@@ -134,7 +134,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock
-bindsym $mod+x exec /home/pazimor/.config/i3/lock.sh /home/pazimor/.config/i3/padlock.png
+bindsym $mod+x exec /home/pazimor/.config/i3lock/lock.sh /home/pazimor/.config/i3lock/padlock.png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
