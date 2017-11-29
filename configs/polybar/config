@@ -46,7 +46,7 @@ font-2 = siji:pixelsize=10;1
 font-0 = FontAwesome:style=Regular=10;1
 
 modules-left = i3
-modules-right = volume network battery date powermenu
+modules-right = volume wired-network  wireless-network battery date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -97,7 +97,7 @@ fuzzy-match = true
 
 ws-icon-1 = 
 ws-icon-10 = 
-ws-icon-default =  
+ws-icon-default = 
 
 format = <label-state> <label-mode>
 format-underline = #0a6cf5
@@ -127,12 +127,20 @@ label-urgent-padding = 2
 [module/wireless-network]
 type = internal/network
 interface = wlo1
+interval = 3.0
+accumulate-stats = true
+
+format-connected = <label-connected>
+format-connected-underline = #0a6cf5
+label-connected-foreground = ${colors.foreground}
+label-connected =   %downspeed% | %upspeed%
+label-connected-alt =   %local_ip% (%downspeed% | %upspeed%)
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = #f56c0a
+label-disconnected =  disconnected
 
 [module/wired-network]
-type = internal/network
-interface = eno1
-
-[module/network]
 type = internal/network
 interface = eno1
 interval = 3.0
@@ -140,14 +148,13 @@ accumulate-stats = true
 
 format-connected = <label-connected>
 format-connected-underline = #0a6cf5
-label-connected-foreground = ${colors.foreground} 
+label-connected-foreground = ${colors.foreground}
 label-connected =   %downspeed% | %upspeed%
 label-connected-alt =   %local_ip% (%downspeed% | %upspeed%)
 
 format-disconnected = <label-disconnected>
-format-disconnected-underline = #f56c0a 
+format-disconnected-underline = #f56c0a
 label-disconnected =  disconnected
-
 
 [module/date]
 type = internal/date
