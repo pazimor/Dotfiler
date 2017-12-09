@@ -16,8 +16,6 @@ pacaur -S tilda-git
 pacaur -S oh-my-zsh-git
 pacaur -S vim
 pacaur -S feh
-pacaur -S phallus-font-git
-pacaur -S artwiz-fonts
 
 ## download fonts
 git clone https://github.com/FortAwesome/Font-Awesome.git
@@ -28,7 +26,7 @@ feh --bg-scale ./config/wallpaper.png
 mkdir ~/.fonts
 cp -t Font-Awesome/fonts/*.ttf ~/.fonts
 cp -r configs/* ~/.config
-
+rm -rf Font-Awesome
 
 ## install ohm y zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

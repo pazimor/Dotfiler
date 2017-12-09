@@ -1,4 +1,5 @@
-to do list
+TODO list
 
-un installer pour installer toute les depandances sur arch
-pimper vim 
+make a spetial install for each parts (i3 / polybar / i3lock / tilda cava / rofi / compton / wallpaper)
+make other THEMES
+setup compton
