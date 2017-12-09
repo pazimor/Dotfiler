@@ -3,3 +3,4 @@ TODO list
 make a spetial install for each parts (i3 / polybar / i3lock / tilda cava / rofi / compton / wallpaper)
 make other THEMES
 setup compton
+add .zshrc
