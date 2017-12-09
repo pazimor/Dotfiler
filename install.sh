@@ -3,6 +3,7 @@
 
 sudo pacman -Syu pacaur
 sudo pacman -Syu zsh
+sudo pacman -Syu scrot
 pacaur -S i3-gaps
 pacaur -S polybar-git
 pacaur -S rofi-git
@@ -15,6 +16,8 @@ pacaur -S tilda-git
 pacaur -S oh-my-zsh-git
 pacaur -S vim
 pacaur -S feh
+pacaur -S phallus-font-git
+pacaur -S artwiz-fonts
 
 ## download fonts
 git clone https://github.com/FortAwesome/Font-Awesome.git
