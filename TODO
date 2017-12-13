@@ -1,13 +1,9 @@
 TODO list
 
-make a spetial install for each parts (i3 / polybar / i3lock / tilda cava / rofi / compton / wallpaper)
-
-make other THEMES
+allow to install other script eazily
 
 test pyWall
 
-setup compton
-
 add .zshrc
 
-set icon and GTK theme form command
+set icon and GTK theme form command-line

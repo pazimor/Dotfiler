@@ -1,18 +1,1 @@
-;##############################################
-;
-;           list of used packages
-;                dotfile for
-;
-;##############################################
-
-
-
-i3-gaps
-i3lock
-polybar
-tilda
-cava
-compton
-termite
-zsh
-vim
+with this script you can shitch eazily from theme to theme and merge theme to have the perfect rice
