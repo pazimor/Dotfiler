@@ -1,4 +1,4 @@
 
 #make custom path
 
-cp -r ../configs/booda-theme/i3 ~/.config/
+cp -r "../configs/$1/i3" ~/.config/

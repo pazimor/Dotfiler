@@ -1,37 +1,36 @@
 
 ## install package 
 
-sudo pacman -Syu pacaur
-sudo pacman -Syu zsh
-sudo pacman -Syu scrot
-pacaur -S i3-gaps
-pacaur -S polybar-git
-pacaur -S rofi-git
-pacaur -S compton-git
-pacaur -S i3lock-color-git
-pacaur -S cava-git
-pacaur -S termite-git ## need to get an other one
-pacaur -S vim
-pacaur -S feh
-
-pacaur -S papirus-icon-theme-git ## have not to be sintall here
-pacaur -S tilda-git ## same
-pacaur -S oh-my-zsh-git ## same
+sudo pacman -Syu pacaur --noconfirm
+sudo pacman -Syu zsh --noconfirm
+sudo pacman -Syu scrot --noconfirm
+pacaur -S i3-gaps --noconfirm
+pacaur -S polybar-git --noconfirm
+pacaur -S rofi-git --noconfirm
+pacaur -S compton-git --noconfirm
+pacaur -S i3lock-color-git --noconfirm
+pacaur -S cava-git --noconfirm
+pacaur -S termite-git --noconfirm ## need to get an other one
+pacaur -S vim --noconfirm
+pacaur -S feh --noconfirm
+pacaur -S papirus-icon-theme-git --noconfirm ## have not to be sintall here
+pacaur -S tilda-git --noconfirm ## same
+pacaur -S xdo --noconfirm
 
 ## install fonts
 git clone https://github.com/FortAwesome/Font-Awesome.git 
 mkdir ~/.fonts
-cp -t Font-Awesome/fonts/*.ttf ~/.fonts
+cp Font-Awesome/fonts/*.ttf ~/.fonts
 rm -rf Font-Awesome
 
 ## install default theme
 cd select
-./i3.sh
-./lock.sh
-./polybar.sh
-./rofi.sh
-./visual.sh
-./walpaper.sh
+./i3.sh booda-theme
+./lock.sh booda-theme
+./polybar.sh booda-theme
+./rofi.sh booda-theme
+./visual.sh booda-theme
+./walpaper.sh booda-theme
 cd ..
 
 ## install ohm y zsh

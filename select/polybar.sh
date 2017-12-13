@@ -1,4 +1,4 @@
 
 #make custom path
 
-cp -r ../configs/booda-theme/polybar ~/.config/
+cp -r "../configs/$1/polybar" ~/.config/
