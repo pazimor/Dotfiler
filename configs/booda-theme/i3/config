@@ -229,9 +229,9 @@ for_window [class="^.*"] border pixel 1
 
 # Autostart apps
 
-exec_always /home/pazimor/.config/polybar/launcher.sh &
+exec_always ~/.config/polybar/launcher.sh &
 exec --no-startup-id compton &
-exec_always /home/pazimor/.fehbg &
+exec_always ~/.fehbg &
 exec tilda --command cava &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secets,ssh,gpg) &
 exec --no-startup-id nm-applet

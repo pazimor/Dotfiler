@@ -17,11 +17,9 @@ pacaur -S papirus-icon-theme-git --noconfirm ## have not to be sintall here
 pacaur -S tilda-git --noconfirm ## same
 pacaur -S xdo --noconfirm
 
-## install fonts
-git clone https://github.com/FortAwesome/Font-Awesome.git 
+## install fonts 
 mkdir ~/.fonts
-cp Font-Awesome/fonts/*.ttf ~/.fonts
-rm -rf Font-Awesome
+cp -r fonts/* ~/.fonts
 
 ## install default theme
 cd select
