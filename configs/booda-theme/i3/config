@@ -234,3 +234,4 @@ exec --no-startup-id compton &
 exec_always /home/pazimor/.fehbg &
 exec tilda --command cava &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secets,ssh,gpg) &
+exec --no-startup-id nm-applet
