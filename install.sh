@@ -1,5 +1,5 @@
 
-## install package 
+## install package
 
 sudo pacman -Syu pacaur --noconfirm
 sudo pacman -Syu zsh --noconfirm
@@ -17,9 +17,9 @@ pacaur -S papirus-icon-theme-git --noconfirm ## have not to be sintall here
 pacaur -S tilda-git --noconfirm ## same
 pacaur -S xdo --noconfirm
 
-## install fonts 
+## install fonts
 mkdir ~/.fonts
-cp -r fonts/* ~/.fonts
+cp -r Fonts/* ~/.fonts
 
 ## install default theme
 cd select
@@ -33,3 +33,5 @@ cd ..
 
 ## install ohm y zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cd ..
+cp zshconf/.zshrc ~/
