@@ -23,12 +23,12 @@ cp -r fonts/* ~/.fonts
 
 ## install default theme
 cd select
-./i3.sh booda-theme
-./lock.sh booda-theme
-./polybar.sh booda-theme
-./rofi.sh booda-theme
-./visual.sh booda-theme
-./walpaper.sh booda-theme
+./i3.sh theme
+./lock.sh theme
+./polybar.sh theme
+./rofi.sh theme
+./visual.sh theme
+./walpaper.sh theme
 cd ..
 
 ## install ohm y zsh

@@ -1,1 +1,7 @@
-with this script you can shitch eazily from theme to theme and merge theme to have the perfect rice
+### RICE ###
+
+this is my current rice
+
+let's share it
+
+¯\_(ツ)_/¯
