@@ -4,4 +4,4 @@ this is my current rice
 
 let's share it
 
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
